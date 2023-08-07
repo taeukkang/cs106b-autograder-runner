@@ -10,6 +10,9 @@ Autograders are not included (for obvious reasons). This is NOT an autograder, b
 # Place the script in the assignment* directory (or use Finder to copy)
 cp run_graders.sh assignment*/
 
+# Navigate to the assignment* directory
+cd assignment*
+
 # Make the script executable
 chmod +x run_graders.sh
 
