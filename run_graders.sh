@@ -5,7 +5,7 @@ red_color="\033[1;31m"
 reset_color="\033[0m"
 
 # Find the latest Qt version
-qt_version=$(find ~/Qt -maxdepth 1 -type d | grep -Eo 'Qt_[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n 1 | awk -F '_' '{print $2}')
+qt_version=$(ls -d ~/Qt/*/ | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n 1)
 
 # Initialize the flag for the -q option
 quit_apps=false
